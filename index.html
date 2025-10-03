@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Newinsight Solutions LLP — Home</title>
+
+  <!-- Tailwind CDN (for prototyping/self-contained pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* small custom polish (kept minimal) */
+    .card-badge {
+      font-size: .78rem;
+      padding: .25rem .5rem;
+      border-radius: .5rem;
+    }
+
+    /* smooth transition for dropdown menus */
+    .fade-in {
+      transition: opacity .18s ease, transform .18s ease;
+      transform-origin: top;
+    }
+  </style>
+  <style>
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      /* distance from bottom */
+      right: 20px;
+      /* distance from right */
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
+</head>
+
+<body class="italic antialiased text-gray-800">
+  <a href="https://wa.me/917065454714" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- TOP BAR -->
+  <div class="bg-gray-900 text-gray-200 text-sm py-2 px-4 md:px-8 ">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-2 ml-auto"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</span>
+      <span class="hidden sm:inline-flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+        info@newinsightsolutions.com</span>
+    </div>
+
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="bg-slate-900 text-white sticky top-0 z-50">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="flex items-center justify-between h-16">
+        <!-- brand -->
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="hidden sm:block">
+            <div class="font-bold">Newinsight Solutions LLP</div>
+            <div class="text-xs text-slate-300">Your Global Immigration Partner</div>
+          </div>
+        </a>
+
+        <!-- desktop nav -->
+        <nav class="hidden md:flex items-center gap-4 font-medium">
+          <a href="index.html" class="text-blue-100 hover:text-white">Home</a>
+          <a href="about.html" class="hover:text-white">About Us</a>
+
+          <!-- Services dropdown -->
+          <div class="relative group">
+            <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+              <a href="services.html">
+                Services</a> <i class="fa-solid fa-caret-down text-sm"></i>
+            </button>
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-full max-w-[95vw] lg:w-[700px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+              <!-- Col 1 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">Service</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">Job Assistance</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Post Landing</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">PTE Preparation</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">IELTS Preparation</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Permanent Residency</a></li>
+                </ul>
+              </div>
+
+              <!-- Col 2 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">Study Visa</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">Study Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">UK Study Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">USA Study Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Canada Study Visa</a></li>
+                </ul>
+              </div>
+
+              <!-- Col 3 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">Visitor Visa</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">Canada Visitor Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">UK Visitor Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">USA Visitor Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Schengen Visitor Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">UAE Visitor Visa</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Travel & Tourism</a></li>
+                </ul>
+              </div>
+
+              <!-- Col 4 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">Investment Visa</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">Canada Investment</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">UK Investment</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">USA Investment</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Countries dropdown -->
+          <div class="relative group">
+            <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+              Countries <i class="fa-solid fa-caret-down text-sm"></i>
+            </button>
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 mt-3  max-w-[75vw] lg:w-[500px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+              <!-- Col 1 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">Europe</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">Germany</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">France</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Italy</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Spain</a></li>
+                </ul>
+              </div>
+
+              <!-- Col 2 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">North America</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">USA</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Canada</a></li>
+                </ul>
+              </div>
+
+              <!-- Col 3 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">Asia</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">India</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">Singapore</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">UAE</a></li>
+                </ul>
+              </div>
+
+              <!-- Col 4 -->
+              <div>
+                <h4 class="font-semibold text-slate-900 mb-2">Australia</h4>
+                <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="block hover:text-blue-600">Australia</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">New Zealand</a></li>
+                  <li><a href="#" class="block hover:text-blue-600">UK</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <a href="reviews.html" class="hover:text-white">Reviews</a>
+          <a href="career.html" class="hover:text-white">Career</a>
+          <a href="contact.html" class="hover:text-white">Contact Us</a>
+        </nav>
+
+        <!-- mobile buttons -->
+        <div class="md:hidden flex items-center gap-3">
+          <a href="contact.html"
+            class="hidden sm:inline-flex items-center gap-2 bg-blue-600 px-3 py-2 rounded text-white text-sm">
+            <i class="fa-solid fa-headset"></i> Contact
+          </a>
+          <button id="mobile-toggle" class="p-2 rounded-md hover:bg-white/10 focus:outline-none">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-slate-800/95 text-white hidden">
+      <div class="px-4 py-4 space-y-2">
+        <a href="index.html" class="block px-2 py-2 rounded hover:bg-white/10">Home</a>
+        <a href="about.html" class="block px-2 py-2 rounded hover:bg-white/10">About Us</a>
+
+        <!-- Mobile services dropdown -->
+        <div>
+          <button id="mobile-services-toggle"
+            class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+            <span><a href="services.html">Services</a></span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div id="mobile-services-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+            <!-- Cols replicated from desktop -->
+            <div>
+              <h4 class="font-semibold">Service</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">Job Assistance</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Post Landing</a></li>
+                <li><a href="#" class="block hover:text-blue-400">PTE Preparation</a></li>
+                <li><a href="#" class="block hover:text-blue-400">IELTS Preparation</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Permanent Residency</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold">Study Visa</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">Study Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">UK Study Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">USA Study Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Canada Study Visa</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold">Visitor Visa</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">Canada Visitor Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">UK Visitor Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">USA Visitor Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Schengen Visitor Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">UAE Visitor Visa</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Travel & Tourism</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold">Investment Visa</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">Canada Investment</a></li>
+                <li><a href="#" class="block hover:text-blue-400">UK Investment</a></li>
+                <li><a href="#" class="block hover:text-blue-400">USA Investment</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile countries dropdown -->
+        <div>
+          <button id="mobile-countries-toggle"
+            class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+            <span>Countries</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div id="mobile-countries-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+            <div>
+              <h4 class="font-semibold">Europe</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">Germany</a></li>
+                <li><a href="#" class="block hover:text-blue-400">France</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Italy</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Spain</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold">North America</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">USA</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Canada</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold">Asia</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">India</a></li>
+                <li><a href="#" class="block hover:text-blue-400">Singapore</a></li>
+                <li><a href="#" class="block hover:text-blue-400">UAE</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold">Australia & Others</h4>
+              <ul class="pl-2 space-y-1">
+                <li><a href="#" class="block hover:text-blue-400">Australia</a></li>
+                <li><a href="#" class="block hover:text-blue-400">New Zealand</a></li>
+                <li><a href="#" class="block hover:text-blue-400">UK</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a href="reviews.html" class="block px-2 py-2 rounded hover:bg-white/10">Reviews</a>
+        <a href="career.html" class="block px-2 py-2 rounded hover:bg-white/10">Career</a>
+        <a href="contact.html" class="block px-2 py-2 rounded hover:bg-white/10">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="bg-gradient-to-r from-blue-900 to-slate-800 text-white">
+      <div class="container mx-auto px-4 md:px-8 py-16 md:py-20">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <span class="inline-block bg-blue-600 text-xs px-3 py-1 rounded-full uppercase tracking-wide">Trusted
+              Immigration Partner</span>
+
+            <h1 class="mt-6 text-3xl md:text-4xl font-extrabold leading-tight">
+              Your Pathway to <span class="text-blue-300">International Success</span>
+            </h1>
+
+            <p class="mt-4 text-slate-200 max-w-prose">Expert immigration and visa services to help you achieve your
+              dreams of living, working, or studying abroad. With over 15 years of experience and a 98% success rate.
+            </p>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+              <a href="contact.html"
+                class="inline-flex items-center gap-2 bg-white text-blue-600 px-4 py-2 rounded-md font-semibold hover:bg-gray-100">
+                <i class="fa-solid fa-comments"></i> Get Free Consultation
+              </a>
+
+            </div>
+          </div>
+
+          <div class="flex justify-center md:justify-end">
+            <div class="w-full max-w-md bg-white rounded-xl overflow-hidden shadow-xl">
+              <!-- placeholder image - replace with asset when available -->
+              <img src="Indeximage.jpg" alt="meeting room" class="w-full h-64 object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="bg-white text-slate-800">
+      <div class="container mx-auto px-4 md:px-8 py-8 md:py-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="py-6">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+              <i class="fa-solid fa-users text-xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mt-3">5000+</h3>
+            <p class="text-sm text-slate-500 mt-1">Happy Clients</p>
+          </div>
+
+          <div class="py-6">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+              <i class="fa-solid fa-calendar-check text-xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mt-3">15+</h3>
+            <p class="text-sm text-slate-500 mt-1">Years Experience</p>
+          </div>
+
+          <div class="py-6">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+              <i class="fa-solid fa-check-circle text-xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mt-3">98%</h3>
+            <p class="text-sm text-slate-500 mt-1">Success Rate</p>
+          </div>
+
+          <div class="py-6">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+              <i class="fa-solid fa-globe text-xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mt-3">25+</h3>
+            <p class="text-sm text-slate-500 mt-1">Countries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR IMMIGRATION SERVICES -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-3xl font-bold text-center">Our Services</h2>
+        <p class="text-center text-slate-500 mt-2 max-w-2xl mx-auto">Comprehensive immigration solutions tailored to
+          your specific needs and goals.</p>
+
+        <div class="grid gap-6 mt-8 md:grid-cols-3 lg:grid-cols-3">
+          <!-- Card -->
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-people-roof text-blue-600 text-4xl"></i>
+                <h3 class="mt-3 font-bold">Permanent Residency</h3>
+                <p>
+                  Permanent Residency Visa
+                  Obtain a Permanent Residence visa for a variety of nations by utilising several immigration schemes
+                  that are best appropriate for your present profile.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div>
+                <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                  <i class="fa-solid fa-magnifying-glass text-blue-600 text-4xl"></i>
+                  <h3 class="mt-3 font-bold">Job Assistance</h3>
+
+                  Job Assistance
+                  We will assist you with the immigration process to your desired country. Through our existing
+                  contacts, we may also aid you with a passive job hunt in a foreign country.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-briefcase text-blue-600 text-4xl"></i>
+                <h3 class="mt-3 font-bold">Business Visa</h3>
+
+                A business visa is an official travel authorization intended for individuals engaging in business
+                activities in a foreign country for a limited duration, without entering its labor market.
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-scale-balanced text-blue-600 text-2xl"></i>
+                <h3 class="mt-3 font-bold">Legal Consultation</h3>
+                <p>A legal consultation is a discussion with a lawyer to get advice on a legal matter. You can obtain
+                  legal consultation through online platforms like LawRato and Legalkart by submitting a question or
+                  scheduling a virtual meeting. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-people-roof text-blue-600 text-2xl"></i>
+                <h3 class="mt-3 font-bold">Tourist Visa</h3>
+                <p>
+                  A tourist visa is an official document that authorizes a person to enter a foreign country for a
+                  limited, recreational period, typically for leisure, tourism, or visiting family.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-people-roof text-blue-600 text-4xl"></i>
+                <h3 class="mt-3 font-bold">Study Visa</h3>
+                <p>When applying for a student visa, applicants must submit various documents and follow specific
+                  procedures, which can include composing a statement of purpose or cover letter</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-people-roof text-blue-600 text-4xl"></i>
+                <h3 class="mt-3 font-semibold">Post Landing Services</h3>
+                <p>provide essential support and guidance to individuals after they have immigrated to a new country,
+                  helping them settle in by assisting with airport pickup, accommodation, opening bank accounts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-people-roof text-blue-600 text-2xl"></i>
+                <h3 class="mt-3 font-bold">IELTS , PTE Preparation</h3>
+                <p>t IELTS offers both paper-based and computer-based formats with a face-to-face speaking test, while
+                  PTE is entirely computer-based, including the speaking section, which is AI-scored. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow p-4">
+            <div class="flex items-start gap-3">
+
+              <div class="bg-white rounded-xl shadow-sm p-4 card-hover text-center">
+                <i class="fa-solid fa-file-contract text-blue-600 text-2xl"></i>
+                <h3 class="mt-3 font-bold">Document Preparation</h3>
+                <p>define the migration path, understand existing templates, create a detailed scope, plan clear steps
+                  and timelines, and include a pre-migration assessment checklist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl font-bold">Why Choose Newinsight Solutions?</h2>
+          <p class="text-slate-500 mt-3 max-w-prose">Trusted immigration partner with years of experience, dedicated
+            case managers, and a proven track record of successful outcomes.</p>
+
+          <ul class="mt-6 space-y-4">
+            <li class="flex gap-3 items-start">
+              <div class="flex-none w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center"><i
+                  class="fa-solid fa-shield-check"></i></div>
+              <div>
+                <div class="font-semibold">Trusted Expertise</div>
+                <div class="text-sm text-slate-600">Over 15 years of experience in immigration law and visa processing.
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <div class="flex-none w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center"><i
+                  class="fa-solid fa-bolt"></i></div>
+              <div>
+                <div class="font-semibold">Fast Processing</div>
+                <div class="text-sm text-slate-600">Efficient handling of applications with regular updates on progress.
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <div class="flex-none w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center"><i
+                  class="fa-solid fa-user"></i></div>
+              <div>
+                <div class="font-semibold">Personalized Service</div>
+                <div class="text-sm text-slate-600">Dedicated case managers and personalized immigration strategies.
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <div class="flex-none w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center"><i
+                  class="fa-solid fa-star"></i></div>
+              <div>
+                <div class="font-semibold">High Success Rate</div>
+                <div class="text-sm text-slate-600">98% success with thousands of satisfied clients worldwide.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900 text-white p-6 rounded-xl shadow">
+          <h3 class="text-lg font-semibold">Ready to Start Your Journey?</h3>
+          <p class="mt-2 text-slate-300">Get a free consultation with our immigration experts and take the first step
+            towards your new life abroad.</p>
+          <a href="contact.html"
+            class="mt-6 inline-flex items-center gap-2 bg-blue-600 px-4 py-2 rounded-md font-semibold hover:bg-blue-500">
+            <i class="fa-solid fa-comments"></i> Book Free Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4 md:px-8 text-center">
+        <h2 class="text-3xl font-bold">What Our Clients Say</h2>
+        <p class="text-slate-500 mt-2 max-w-2xl mx-auto">Real success stories from clients who achieved their
+          immigration goals with us.</p>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <blockquote class="bg-white p-6 rounded-xl shadow text-left">
+            <div class="text-yellow-400">★★★★★</div>
+            <p class="mt-3 text-slate-700">"Excellent service! The team helped me navigate the complex Australian
+              immigration process with ease."</p>
+            <footer class="mt-4 font-semibold">Ankit Kumar <span class="text-sm text-slate-500">— Immigrated to
+                Australia</span></footer>
+          </blockquote>
+
+          <blockquote class="bg-white p-6 rounded-xl shadow text-left">
+            <div class="text-yellow-400">★★★★★</div>
+            <p class="mt-3 text-slate-700">"Professional and reliable. Got my PR approval faster than expected thanks to
+              their expertise."</p>
+            <footer class="mt-4 font-semibold">Mithilesh Paswan <span class="text-sm text-slate-500">— Immigrated to
+                Canada</span></footer>
+          </blockquote>
+
+          <blockquote class="bg-white p-6 rounded-xl shadow text-left">
+            <div class="text-yellow-400">★★★★★</div>
+            <p class="mt-3 text-slate-700">"Outstanding support throughout my UK visa application. Highly recommended!"
+            </p>
+            <footer class="mt-4 font-semibold">Animesh Thakur <span class="text-sm text-slate-500">— Immigrated to
+                UK</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-16 bg-slate-900 text-white">
+      <div class="container mx-auto px-4 md:px-8 text-center">
+        <h2 class="text-3xl font-bold">Start Your Immigration Journey Today</h2>
+        <p class="text-slate-300 mt-2 max-w-2xl mx-auto">Don't let complex immigration processes hold you back. Our
+          expert team is here to guide you every step of the way.</p>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <a href="contact.html"
+            class="inline-flex items-center gap-2 bg-blue-600 px-4 py-2 rounded-md font-semibold hover:bg-blue-500">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Get Started Now
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#081428] text-slate-300">
+    <div class="container mx-auto px-4 md:px-8 py-12 grid md:grid-cols-4 gap-8">
+      <!-- Col 1: Brand -->
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div>
+            <div class="text-white font-bold">Newinsight Solutions LLP</div>
+            <div class="text-sm text-slate-400">Your Global Immigration Partner</div>
+          </div>
+        </div>
+
+        <p class="text-sm text-slate-400 mt-4">Expert immigration and visa services for individuals and businesses
+          seeking global opportunities. We provide comprehensive solutions for all your immigration needs.</p>
+
+        <div class="flex items-center gap-3 mt-4">
+          <a href="#" class="text-slate-300 hover:text-white"><i class="fa-brands fa-facebook text-lg"></i></a>
+          <a href="#" class="text-slate-300 hover:text-white"><i class="fa-brands fa-twitter text-lg"></i></a>
+          <a href="#" class="text-slate-300 hover:text-white"><i class="fa-brands fa-linkedin text-lg"></i></a>
+          <a href="#" class="text-slate-300 hover:text-white"><i class="fa-brands fa-instagram text-lg"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div>
+        <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Home</a></li>
+          <li><a href="about.html" class="hover:text-white">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white">Services</a></li>
+          <li><a href="reviews.html" class="hover:text-white">Reviews</a></li>
+          <li><a href="career.html" class="hover:text-white">Career</a></li>
+          <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Immigration Services -->
+      <div>
+        <h4 class="text-white font-semibold mb-3">Countries</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="australia.html" class="block px-3  rounded ">Australia Immigration</a>
+          </li>
+          <li><a href="" class="block px-3 rounded ">Canada Immigration</a></li>
+          <li><a href="uk.html" class="block px-3 rounded ">UK Immigration</a></li>
+          <li><a href="schengen.html" class="block px-3  rounded ">Schengen Visa</a></li>
+          <li><a href="europe.html" class="block px-3  rounded ">European Countries</a></li>
+          <li><a href="study-visa.html" class="block px-3  rounded ">Gulf Countries</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact Information</h4>
+        <p class="text-sm text-slate-400">123 Business Street<br />New York, NY 10001</p>
+        <p class="mt-2 text-sm"><i class="fa-solid fa-phone mr-2"></i>+1 (555) 123-4567</p>
+        <p class="text-sm mt-1"><i class="fa-solid fa-envelope mr-2"></i> info@newinsightsolutions.com</p>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-700">
+      <div class="container mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="text-sm text-slate-400">© 2024 Newinsight Solutions LLP. All rights reserved.</div>
+        <div class="flex items-center gap-4 text-sm">
+          <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+          <a href="disclaimer.html" class="hover:text-white">Disclaimer</a>
+          <a href="Refund.html" class="hover:text-white">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INLINE JS: Mobile toggles & small accessibility helpers -->
+  <script>
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileToggle && mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Mobile services dropdown toggle
+    const servicesToggle = document.getElementById('mobile-services-toggle');
+    const servicesList = document.getElementById('mobile-services-list');
+    servicesToggle && servicesToggle.addEventListener('click', () => {
+      servicesList.classList.toggle('hidden');
+    });
+
+    // Mobile countries dropdown toggle
+    const countriesToggle = document.getElementById('mobile-countries-toggle');
+    const countriesList = document.getElementById('mobile-countries-list');
+    countriesToggle && countriesToggle.addEventListener('click', () => {
+      countriesList.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

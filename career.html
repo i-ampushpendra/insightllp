@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Careers - Newinsight Solutions LLP</title>
+
+    <!-- Tailwind CDN (no build step required) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        /* Inline custom styles */
+        .hero-gradient {
+            background: linear-gradient(120deg, #0f172a 0%, #1f2950 35%, #2b5edc 100%);
+        }
+
+        .card-glow {
+            box-shadow: 0 6px 18px rgba(14, 30, 60, 0.08);
+        }
+
+        .feature-icon {
+            background: rgba(47, 84, 255, 0.06);
+            color: #2f54ff;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(47, 84, 255, 0.12);
+        }
+
+        /* subtle rounded top navbar search bar filler */
+        .topbar {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+    </style>
+    <style>
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            /* distance from bottom */
+            right: 20px;
+            /* distance from right */
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body class="italic text-gray-800 bg-gray-50">
+    <a href="https://wa.me/917065454714" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- TOP BAR -->
+    <div class="bg-gray-900 text-gray-200 text-sm py-2 px-4 md:px-8 ">
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-2 ml-auto"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</span>
+            <span class="hidden sm:inline-flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                info@newinsightsolutions.com</span>
+        </div>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- brand -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="font-bold">Newinsight Solutions LLP</div>
+                        <div class="text-xs text-slate-300">Your Global Immigration Partner</div>
+                    </div>
+                </a>
+
+                <!-- desktop nav -->
+                <nav class="hidden md:flex items-center gap-4 font-medium">
+                    <a href="index.html" class="text-blue-100 hover:text-white">Home</a>
+                    <a href="about.html" class="hover:text-white">About Us</a>
+
+                    <!-- Services dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            <a href="services.html">
+                                Services</a> <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-full max-w-[95vw] lg:w-[700px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Service</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Job Assistance</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Post Landing</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">PTE Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">IELTS Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Permanent Residency</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Study Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Study Visa</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Visitor Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Schengen Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Travel & Tourism</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Investment Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Investment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Countries dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            Countries <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3  max-w-[75vw] lg:w-[500px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Europe</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Germany</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">France</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Italy</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Spain</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">North America</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">USA</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Asia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">India</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Singapore</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Australia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Australia</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">New Zealand</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="reviews.html" class="hover:text-white">Reviews</a>
+                    <a href="career.html" class="hover:text-white">Career</a>
+                    <a href="contact.html" class="hover:text-white">Contact Us</a>
+                </nav>
+
+                <!-- mobile buttons -->
+                <div class="md:hidden flex items-center gap-3">
+                    <a href="contact.html"
+                        class="hidden sm:inline-flex items-center gap-2 bg-blue-600 px-3 py-2 rounded text-white text-sm">
+                        <i class="fa-solid fa-headset"></i> Contact
+                    </a>
+                    <button id="mobile-toggle" class="p-2 rounded-md hover:bg-white/10 focus:outline-none">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="md:hidden bg-slate-800/95 text-white hidden">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-2 py-2 rounded hover:bg-white/10">Home</a>
+                <a href="about.html" class="block px-2 py-2 rounded hover:bg-white/10">About Us</a>
+
+                <!-- Mobile services dropdown -->
+                <div>
+                    <button id="mobile-services-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span><a href="services.html">Services</a></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-services-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <!-- Cols replicated from desktop -->
+                        <div>
+                            <h4 class="font-semibold">Service</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Job Assistance</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Post Landing</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">PTE Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">IELTS Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Permanent Residency</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Study Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada Study Visa</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Visitor Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Schengen Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Travel & Tourism</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Investment Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Investment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile countries dropdown -->
+                <div>
+                    <button id="mobile-countries-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span>Countries</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-countries-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <div>
+                            <h4 class="font-semibold">Europe</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Germany</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">France</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Italy</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Spain</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">North America</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">USA</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Asia</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">India</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Singapore</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Australia & Others</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Australia</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">New Zealand</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="reviews.html" class="block px-2 py-2 rounded hover:bg-white/10">Reviews</a>
+                <a href="career.html" class="block px-2 py-2 rounded hover:bg-white/10">Career</a>
+                <a href="contact.html" class="block px-2 py-2 rounded hover:bg-white/10">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-6xl mx-auto px-4 py-16 sm:py-20 lg:py-28">
+            <div class="text-center max-w-3xl mx-auto">
+                <a href="#apply"
+                    class="inline-block mb-6 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full text-sm">Join Our
+                    Team</a>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">Build Your Career With Us</h1>
+                <p class="mt-4 text-gray-200 text-base sm:text-lg">
+                    Join a dynamic team of immigration professionals dedicated to helping people achieve their dreams of
+                    global mobility. Grow your career while making a real difference.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="max-w-7xl mx-auto px-4 py-12 sm:py-16">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-bold">Why Choose Newinsight Solutions?</h2>
+            <p class="text-gray-500 mt-2">We believe in empowering our employees to achieve their full potential</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- feature -->
+            <div class="bg-white rounded-lg p-6 card-glow">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center text-xl">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Competitive Salary</h3>
+                        <p class="text-sm text-gray-500 mt-1">Market-leading compensation packages with performance
+                            bonuses</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 card-glow">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center text-xl">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Health & Wellness</h3>
+                        <p class="text-sm text-gray-500 mt-1">Comprehensive health insurance and wellness programs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 card-glow">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center text-xl">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Professional Development</h3>
+                        <p class="text-sm text-gray-500 mt-1">Continuous learning opportunities and certification
+                            support</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 card-glow">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center text-xl">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Work-Life Balance</h3>
+                        <p class="text-sm text-gray-500 mt-1">Flexible working arrangements and generous vacation policy
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 card-glow">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center text-xl">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Global Opportunities</h3>
+                        <p class="text-sm text-gray-500 mt-1">Work across multiple offices and international projects
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 card-glow">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 feature-icon rounded-lg flex items-center justify-center text-xl">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Recognition Programs</h3>
+                        <p class="text-sm text-gray-500 mt-1">Employee recognition and career advancement opportunities
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRENT OPENINGS -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold">Current Openings</h2>
+            <p class="text-gray-500 mt-2">Exciting opportunities to join our growing team</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Job card 1 -->
+            <article class="bg-white rounded-lg p-6 card-glow border">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-lg font-semibold">Senior Immigration Consultant</h3>
+                            <span class="text-sm text-gray-400 px-2 py-1 rounded bg-gray-50">Countries</span>
+                        </div>
+                        <div class="text-sm text-gray-500 mt-2">Lead immigration consultant responsible for handling
+                            complex cases and mentoring junior staff.</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-blue-600 font-semibold">$75,000 - $95,000</div>
+                    </div>
+                </div>
+
+                <div class="mt-4 border-t pt-4">
+                    <h4 class="font-medium">Requirements:</h4>
+                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Bachelor's degree in Law or related
+                            field</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>5+ years immigration consulting
+                            experience</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>RCC or equivalent certification</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Fluency in multiple languages
+                            preferred</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="#apply" class="inline-block bg-[#2f54ff] text-white px-4 py-2 rounded-md text-sm">Apply
+                            for this Position</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Job card 2 -->
+            <article class="bg-white rounded-lg p-6 card-glow border">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-lg font-semibold">Immigration Case Officer</h3>
+                            <span class="text-sm text-gray-400 px-2 py-1 rounded bg-gray-50">Case Management</span>
+                        </div>
+                        <div class="text-sm text-gray-500 mt-2">Manage immigration cases from initial consultation
+                            through to completion.</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-blue-600 font-semibold">$50,000 - $65,000</div>
+                    </div>
+                </div>
+
+                <div class="mt-4 border-t pt-4">
+                    <h4 class="font-medium">Requirements:</h4>
+                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Diploma in immigration studies or
+                            related field</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>2+ years experience in immigration
+                            services</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Proficiency with case management
+                            systems</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Client-service orientation</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="#apply" class="inline-block bg-[#2f54ff] text-white px-4 py-2 rounded-md text-sm">Apply
+                            for this Position</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Job card 3 -->
+            <article class="bg-white rounded-lg p-6 card-glow border">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-lg font-semibold">Student Visa Specialist</h3>
+                            <span class="text-sm text-gray-400 px-2 py-1 rounded bg-gray-50">Education Services</span>
+                        </div>
+                        <div class="text-sm text-gray-500 mt-2">Specialise in student visa applications and education
+                            counselling services.</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-blue-600 font-semibold">$35,000 - $45,000</div>
+                    </div>
+                </div>
+
+                <div class="mt-4 border-t pt-4">
+                    <h4 class="font-medium">Requirements:</h4>
+                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Experience in international education
+                        </li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Knowledge of UK/US student visa
+                            processes</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Strong counselling and communication
+                            skills</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="#apply" class="inline-block bg-[#2f54ff] text-white px-4 py-2 rounded-md text-sm">Apply
+                            for this Position</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Job card 4 -->
+            <article class="bg-white rounded-lg p-6 card-glow border">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-lg font-semibold">Business Development Manager</h3>
+                            <span class="text-sm text-gray-400 px-2 py-1 rounded bg-gray-50">Sales & Marketing</span>
+                        </div>
+                        <div class="text-sm text-gray-500 mt-2">Drive business growth through partnerships and client
+                            acquisition strategies.</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-blue-600 font-semibold">$60,000 - $80,000</div>
+                    </div>
+                </div>
+
+                <div class="mt-4 border-t pt-4">
+                    <h4 class="font-medium">Requirements:</h4>
+                    <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>MBA or equivalent business
+                            qualification</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>3+ years in business development</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Strong networking and presentation
+                            skills</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="#apply" class="inline-block bg-[#2f54ff] text-white px-4 py-2 rounded-md text-sm">Apply
+                            for this Position</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- APPLY NOW FORM -->
+    <section id="apply" class="max-w-3xl mx-auto px-4 pb-20">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold">Apply Now</h2>
+            <p class="text-gray-500 mt-2">Don't see the perfect position? Send us your resume and we'll keep you in mind
+                for future opportunities.</p>
+        </div>
+
+        <!-- Note: Replace YOUR_FORMSPREE_ID with your real Formspree form id -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" enctype="multipart/form-data"
+            class="bg-white p-6 rounded-lg shadow">
+            <!-- optional: add a subject for your inbox -->
+            <input type="hidden" name="_subject" value="New job application from website" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="text-sm font-medium">Full Name</label>
+                    <input name="name" required class="mt-1 block w-full rounded-md border-gray-200 shadow-sm px-3 py-2"
+                        placeholder="Your full name" />
+                </div>
+                <div>
+                    <label class="text-sm font-medium">Email Address</label>
+                    <input type="email" name="email" required
+                        class="mt-1 block w-full rounded-md border-gray-200 shadow-sm px-3 py-2"
+                        placeholder="you@example.com" />
+                </div>
+                <div>
+                    <label class="text-sm font-medium">Phone Number</label>
+                    <input name="phone" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm px-3 py-2"
+                        placeholder="+1 (555) 123-4567" />
+                </div>
+                <div>
+                    <label class="text-sm font-medium">Position of Interest</label>
+                    <select name="position" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm px-3 py-2">
+                        <option value="">Select a position</option>
+                        <option>Senior Immigration Consultant</option>
+                        <option>Immigration Case Officer</option>
+                        <option>Student Visa Specialist</option>
+                        <option>Business Development Manager</option>
+                        <option>General Application</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="text-sm font-medium">Years of Experience</label>
+                    <select name="experience" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm px-3 py-2">
+                        <option value="">Select experience level</option>
+                        <option>0-1 years</option>
+                        <option>1-3 years</option>
+                        <option>3-5 years</option>
+                        <option>5+ years</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="text-sm font-medium">Resume (optional)</label>
+                    <!-- Formspree supports file uploads if enabled on your account -->
+                    <input type="file" name="resume" class="mt-1 block w-full text-sm" />
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <label class="text-sm font-medium">Cover Letter</label>
+                <textarea name="message" rows="5"
+                    class="mt-1 block w-full rounded-md border-gray-200 shadow-sm px-3 py-2"
+                    placeholder="Tell us why you want to join our team and what makes you a great fit..."></textarea>
+            </div>
+
+            <div class="mt-4 text-sm text-gray-500">
+                Note: Please attach your resume and any relevant certificates. We review all applications carefully and
+                will contact qualified candidates within 2 weeks.
+            </div>
+
+            <div class="mt-6">
+                <button type="submit"
+                    class="w-full md:w-auto bg-[#2f54ff] hover:bg-[#2347d6] text-white px-6 py-2 rounded-md">
+                    Submit Application
+                </button>
+            </div>
+        </form>
+        <p class="text-xs text-gray-400 mt-3">After submit, Formspree will send a confirmation depending on your
+            Formspree settings.</p>
+    </section>
+
+    <!-- VALUES + DARK FOOTER -->
+    <section class="bg-[#0b1220] text-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="text-center mb-8">
+                <h3 class="text-xl font-semibold">Our Company Values</h3>
+                <p class="text-gray-400 mt-2 max-w-2xl mx-auto">We believe in creating a workplace where everyone can
+                    thrive and contribute to our mission of helping people achieve their immigration dreams.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <ul class="space-y-2">
+                    <li><i class="fas fa-check-circle text-blue-400 mr-3"></i>Excellence in service delivery</li>
+                    <li><i class="fas fa-check-circle text-blue-400 mr-3"></i>Client-focused approach</li>
+                    <li><i class="fas fa-check-circle text-blue-400 mr-3"></i>Teamwork and collaboration</li>
+                </ul>
+
+                <ul class="space-y-2">
+                    <li><i class="fas fa-check-circle text-blue-400 mr-3"></i>Integrity and ethical practices</li>
+                    <li><i class="fas fa-check-circle text-blue-400 mr-3"></i>Innovation and continuous improvement</li>
+                    <li><i class="fas fa-check-circle text-blue-400 mr-3"></i>Professional development and growth</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="bg-[#081428] text-slate-300">
+            <div class="container mx-auto px-4 md:px-8 py-12 grid md:grid-cols-4 gap-8">
+                <!-- Col 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <div class="text-white font-bold">Newinsight Solutions LLP</div>
+                            <div class="text-sm text-slate-400">Your Global Immigration Partner</div>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-slate-400 mt-4">Expert immigration and visa services for individuals and
+                        businesses
+                        seeking global opportunities. We provide comprehensive solutions for all your immigration needs.
+                    </p>
+
+                    <div class="flex items-center gap-3 mt-4">
+                        <a href="#" class="text-slate-300 hover:text-white"><i
+                                class="fa-brands fa-facebook text-lg"></i></a>
+                        <a href="#" class="text-slate-300 hover:text-white"><i
+                                class="fa-brands fa-twitter text-lg"></i></a>
+                        <a href="#" class="text-slate-300 hover:text-white"><i
+                                class="fa-brands fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-slate-300 hover:text-white"><i
+                                class="fa-brands fa-instagram text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white">Services</a></li>
+                        <li><a href="reviews.html" class="hover:text-white">Reviews</a></li>
+                        <li><a href="career.html" class="hover:text-white">Career</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Immigration Services -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Countries</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="australia.html" class="block px-3  rounded ">Australia Immigration</a>
+                        </li>
+                        <li><a href="" class="block px-3 rounded ">Canada Immigration</a></li>
+                        <li><a href="uk.html" class="block px-3 rounded ">UK Immigration</a></li>
+                        <li><a href="schengen.html" class="block px-3  rounded ">Schengen Visa</a></li>
+                        <li><a href="europe.html" class="block px-3  rounded ">European Countries</a></li>
+
+                        <li><a href="study-visa.html" class="block px-3  rounded ">Gulf Countries</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Contact Information</h4>
+                    <p class="text-sm text-slate-400">123 Business Street<br />New York, NY 10001</p>
+                    <p class="mt-2 text-sm"><i class="fa-solid fa-phone mr-2"></i>+1 (555) 123-4567</p>
+                    <p class="text-sm mt-1"><i class="fa-solid fa-envelope mr-2"></i> info@newinsightsolutions.com</p>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-700">
+                <div
+                    class="container mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+                    <div class="text-sm text-slate-400">© 2024 Newinsight Solutions LLP. All rights reserved.</div>
+                    <div class="flex items-center gap-4 text-sm">
+                        <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                        <a href="disclaimer.html" class="hover:text-white">Disclaimer</a>
+                        <a href="Refund.html" class="hover:text-white">Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- small script for mobile nav toggle -->
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileToggle && mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile services dropdown toggle
+        const servicesToggle = document.getElementById('mobile-services-toggle');
+        const servicesList = document.getElementById('mobile-services-list');
+        servicesToggle && servicesToggle.addEventListener('click', () => {
+            servicesList.classList.toggle('hidden');
+        });
+
+        // Mobile countries dropdown toggle
+        const countriesToggle = document.getElementById('mobile-countries-toggle');
+        const countriesList = document.getElementById('mobile-countries-list');
+        countriesToggle && countriesToggle.addEventListener('click', () => {
+            countriesList.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

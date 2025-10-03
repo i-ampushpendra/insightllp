@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disclaimer - Newinsight Solutions LLP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .fade-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <style>
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            /* distance from bottom */
+            right: 20px;
+            /* distance from right */
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body class="italic text-gray-800">
+    <a href="https://wa.me/917065454714" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <div class="bg-gray-900 text-gray-200 text-sm py-2 px-4 md:px-8 ">
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-2 ml-auto"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</span>
+            <span class="hidden sm:inline-flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                info@newinsightsolutions.com</span>
+        </div>
+
+    </div>
+    <header class="bg-slate-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- brand -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="font-bold">Newinsight Solutions LLP</div>
+                        <div class="text-xs text-slate-300">Your Global Immigration Partner</div>
+                    </div>
+                </a>
+
+                <!-- desktop nav -->
+                <nav class="hidden md:flex items-center gap-4 font-medium">
+                    <a href="index.html" class="text-blue-100 hover:text-white">Home</a>
+                    <a href="about.html" class="hover:text-white">About Us</a>
+
+                    <!-- Services dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            <a href="services.html">
+                                Services</a> <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-full max-w-[95vw] lg:w-[700px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Service</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Job Assistance</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Post Landing</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">PTE Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">IELTS Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Permanent Residency</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Study Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Study Visa</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Visitor Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Schengen Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Travel & Tourism</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Investment Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Investment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Countries dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            Countries <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3  max-w-[75vw] lg:w-[500px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Europe</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Germany</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">France</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Italy</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Spain</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">North America</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">USA</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Asia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">India</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Singapore</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Australia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Australia</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">New Zealand</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="reviews.html" class="hover:text-white">Reviews</a>
+                    <a href="career.html" class="hover:text-white">Career</a>
+                    <a href="contact.html" class="hover:text-white">Contact Us</a>
+                </nav>
+
+                <!-- mobile buttons -->
+                <div class="md:hidden flex items-center gap-3">
+                    <a href="contact.html"
+                        class="hidden sm:inline-flex items-center gap-2 bg-blue-600 px-3 py-2 rounded text-white text-sm">
+                        <i class="fa-solid fa-headset"></i> Contact
+                    </a>
+                    <button id="mobile-toggle" class="p-2 rounded-md hover:bg-white/10 focus:outline-none">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="md:hidden bg-slate-800/95 text-white hidden">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-2 py-2 rounded hover:bg-white/10">Home</a>
+                <a href="about.html" class="block px-2 py-2 rounded hover:bg-white/10">About Us</a>
+
+                <!-- Mobile services dropdown -->
+                <div>
+                    <button id="mobile-services-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span><a href="services.html">Services</a></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-services-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <!-- Cols replicated from desktop -->
+                        <div>
+                            <h4 class="font-semibold">Service</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Job Assistance</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Post Landing</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">PTE Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">IELTS Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Permanent Residency</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Study Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada Study Visa</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Visitor Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Schengen Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Travel & Tourism</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Investment Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Investment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile countries dropdown -->
+                <div>
+                    <button id="mobile-countries-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span>Countries</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-countries-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <div>
+                            <h4 class="font-semibold">Europe</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Germany</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">France</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Italy</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Spain</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">North America</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">USA</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Asia</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">India</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Singapore</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Australia & Others</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Australia</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">New Zealand</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="reviews.html" class="block px-2 py-2 rounded hover:bg-white/10">Reviews</a>
+                <a href="career.html" class="block px-2 py-2 rounded hover:bg-white/10">Career</a>
+                <a href="contact.html" class="block px-2 py-2 rounded hover:bg-white/10">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold">Disclaimer</h1>
+            <p class="mt-2 text-gray-200">
+                Information provided is for general purposes only. As per our legal obligations, please read
+                and understand our disclaimer before proceeding with our services.
+            </p>
+        </div>
+    </section>
+
+    <main class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto mb-10">
+                <h2 class="text-xl md:text-2xl font-bold mb-4"><i class="fa-solid fa-circle-info text-blue-600"></i>
+                    General Disclaimer</h2>
+                <p class="text-gray-700">
+                    The information contained on this website is for general information purposes only. While we
+                    endeavor to keep the information up to date and correct, we make no representations or warranties of
+                    any kind, express or implied, about the completeness, accuracy, reliability, suitability, or
+                    availability of the website or the information, products, services, or related graphics. Any
+                    reliance
+                    you place on such information is therefore strictly at your own risk.
+                </p>
+                <div class="bg-yellow-100 text-yellow-800 p-4 rounded-md mt-4 border border-yellow-200">
+                    <p class="font-bold"><i class="fa-solid fa-exclamation-triangle mr-2"></i>Important Notice:</p>
+                    <p class="text-sm mt-1">
+                        Please be aware that Newinsight Solutions LLP and its agents, employees, or representatives
+                        are not responsible for any changes in government immigration policies, visa regulations, or
+                        processing times. Visa approval is solely at the discretion of the relevant government
+                        authority.
+                    </p>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto mt-12 text-center">
+                <h2 class="text-2xl font-bold mb-6">Service Limitations & Responsibilities</h2>
+                <p class="text-gray-600 mb-6">
+                    Understanding our services, limitations, and your responsibilities.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <div class="bg-white shadow-lg p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-briefcase text-blue-600"></i> Professional
+                        Services</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> We provide expert guidance on
+                            immigration laws and procedures.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> We assist with document preparation
+                            and application submission.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> We offer consultation to assess your
+                            eligibility for various visa programs.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> We help with interview preparation
+                            and follow-up on your application.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> We keep you informed of any updates
+                            or changes relevant to your case.</li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow-lg p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-ban text-red-600"></i> Our Disclaimers &
+                        Limitations</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li><i class="fa-solid fa-times-circle text-red-600"></i> We do not guarantee visa approval, as
+                            the final decision rests with the government authority.</li>
+                        <li><i class="fa-solid fa-times-circle text-red-600"></i> We are not a part of any government
+                            body or immigration authority.</li>
+                        <li><i class="fa-solid fa-times-circle text-red-600"></i> Information on this website is not
+                            legal advice. For legal advice, consult an authorized lawyer.</li>
+                        <li><i class="fa-solid fa-times-circle text-red-600"></i> We are not responsible for delays,
+                            denials, or loss of documents by the authorities.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-6">
+                <div class="bg-white shadow-lg p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-database text-blue-600"></i> Information
+                        Accuracy</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> The accuracy of your application
+                            depends on the information you provide.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> You are responsible for providing
+                            true, accurate, and complete information.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> Incorrect or fraudulent information
+                            may lead to rejection or a ban from future applications.</li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow-lg p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-receipt text-blue-600"></i> Fees & Payment
+                        Policy</h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> All our fees are clearly outlined in
+                            our service agreement.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> Our fees cover consultancy services,
+                            not government application fees or third-party costs.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> Refunds are processed as per the
+                            terms of your service agreement.</li>
+                        <li><i class="fa-solid fa-check-circle text-green-600"></i> A rejected visa application does not
+                            automatically entitle you to a refund of our fees.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto mt-12 text-center">
+                <h2 class="text-2xl font-bold mb-6">Limitations of Our Services</h2>
+                <p class="text-gray-600 mb-6">
+                    We do not provide the following services unless specified in our agreement.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                    <i class="fa-solid fa-hand-holding-dollar text-blue-600 text-3xl"></i>
+                    <h4 class="font-bold text-lg mt-2">Financial Guidance</h4>
+                    <p class="text-sm text-gray-600 mt-1">We do not provide financial advice or guarantee job placement.
+                    </p>
+                </div>
+                <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                    <i class="fa-solid fa-gavel text-blue-600 text-3xl"></i>
+                    <h4 class="font-bold text-lg mt-2">Legal Consultation</h4>
+                    <p class="text-sm text-gray-600 mt-1">Our services do not constitute legal representation or advice.
+                    </p>
+                </div>
+                <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+                    <i class="fa-solid fa-user-lock text-blue-600 text-3xl"></i>
+                    <h4 class="font-bold text-lg mt-2">Third-Party Liability</h4>
+                    <p class="text-sm text-gray-600 mt-1">We are not liable for actions or decisions of government
+                        bodies.</p>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto mt-12">
+                <h2 class="text-2xl font-bold mb-6">Legal & Regulatory Information</h2>
+
+                <div class="p-6 rounded-xl shadow-lg border border-gray-200 bg-white">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span
+                            class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">General</span>
+                        <span
+                            class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Legal</span>
+                        <span
+                            class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Policy</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Jurisdiction & Governing Law</h3>
+                            <p class="text-sm text-gray-700">This agreement shall be governed by and construed in
+                                accordance with the laws of the State of New York, without regard to its conflict of law
+                                provisions. Any legal action or proceeding arising out of or relating to this agreement
+                                shall be brought exclusively in the state or federal courts located in New York, New
+                                York.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Referral Disclosure</h3>
+                            <p class="text-sm text-gray-700">We may, from time to time, refer you to other third-party
+                                professionals. Please be aware that we may receive a commission or referral fee for
+                                these referrals. We will always disclose any such arrangement to you.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Updates to Our Disclaimer</h3>
+                            <p class="text-sm text-gray-700">Newinsight Solutions LLP reserves the right to make changes
+                                to this disclaimer at any time without prior notice. We encourage you to review this
+                                page periodically for any updates. Your continued use of our services after any changes
+                                indicates your acceptance of the updated terms.</p>
+                            <p class="text-sm text-gray-700 mt-2">**Last Updated:** October 15, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#081428] text-slate-300">
+        <div class="container mx-auto px-4 md:px-8 py-12 grid md:grid-cols-4 gap-8">
+            <!-- Col 1: Brand -->
+            <div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-bold">Newinsight Solutions LLP</div>
+                        <div class="text-sm text-slate-400">Your Global Immigration Partner</div>
+                    </div>
+                </div>
+
+                <p class="text-sm text-slate-400 mt-4">Expert immigration and visa services for individuals and
+                    businesses
+                    seeking global opportunities. We provide comprehensive solutions for all your immigration needs.</p>
+
+                <div class="flex items-center gap-3 mt-4">
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-facebook text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i class="fa-brands fa-twitter text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-instagram text-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white">Services</a></li>
+                    <li><a href="reviews.html" class="hover:text-white">Reviews</a></li>
+                    <li><a href="career.html" class="hover:text-white">Career</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Immigration Services -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Countries</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="australia.html" class="block px-3  rounded ">Australia Immigration</a>
+                    </li>
+                    <li><a href="" class="block px-3 rounded ">Canada Immigration</a></li>
+                    <li><a href="uk.html" class="block px-3 rounded ">UK Immigration</a></li>
+                    <li><a href="schengen.html" class="block px-3  rounded ">Schengen Visa</a></li>
+                    <li><a href="europe.html" class="block px-3  rounded ">European Countries</a></li>
+                    <li><a href="study-visa.html" class="block px-3  rounded ">Gulf Countries</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Contact Information</h4>
+                <p class="text-sm text-slate-400">123 Business Street<br />New York, NY 10001</p>
+                <p class="mt-2 text-sm"><i class="fa-solid fa-phone mr-2"></i>+1 (555) 123-4567</p>
+                <p class="text-sm mt-1"><i class="fa-solid fa-envelope mr-2"></i> info@newinsightsolutions.com</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-700">
+            <div
+                class="container mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+                <div class="text-sm text-slate-400">© 2024 Newinsight Solutions LLP. All rights reserved.</div>
+                <div class="flex items-center gap-4 text-sm">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                    <a href="disclaimer.html" class="hover:text-white">Disclaimer</a>
+                    <a href="Refund.html" class="hover:text-white">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileToggle && mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile services dropdown toggle
+        const servicesToggle = document.getElementById('mobile-services-toggle');
+        const servicesList = document.getElementById('mobile-services-list');
+        servicesToggle && servicesToggle.addEventListener('click', () => {
+            servicesList.classList.toggle('hidden');
+        });
+
+        // Mobile countries dropdown toggle
+        const countriesToggle = document.getElementById('mobile-countries-toggle');
+        const countriesList = document.getElementById('mobile-countries-list');
+        countriesToggle && countriesToggle.addEventListener('click', () => {
+            countriesList.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

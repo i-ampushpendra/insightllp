@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>UK Immigration — Newinsight Solutions LLP</title>
+
+    <!-- Tailwind (CDN for prototyping) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* small visual polish */
+        .glass-box {
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .card-badge {
+            font-size: .78rem;
+            padding: .25rem .5rem;
+            border-radius: .5rem;
+        }
+    </style>
+    <style>
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            /* distance from bottom */
+            right: 20px;
+            /* distance from right */
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body class="italic antialiased text-gray-800">
+    <a href="https://wa.me/917065454714" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- TOPBAR -->
+    <!-- TOP BAR -->
+    <div class="bg-gray-900 text-gray-200 text-sm py-2 px-4 md:px-8 ">
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-2 ml-auto"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</span>
+            <span class="hidden sm:inline-flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                info@newinsightsolutions.com</span>
+        </div>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- brand -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="font-bold">Newinsight Solutions LLP</div>
+                        <div class="text-xs text-slate-300">Your Global Immigration Partner</div>
+                    </div>
+                </a>
+
+                <!-- desktop nav -->
+                <nav class="hidden md:flex items-center gap-4 font-medium">
+                    <a href="index.html" class="text-blue-100 hover:text-white">Home</a>
+                    <a href="about.html" class="hover:text-white">About Us</a>
+
+                    <!-- Services dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            <a href="services.html">
+                                Services</a> <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-full max-w-[95vw] lg:w-[700px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Service</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Job Assistance</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Post Landing</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">PTE Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">IELTS Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Permanent Residency</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Study Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Study Visa</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Visitor Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Schengen Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Travel & Tourism</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Investment Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Investment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Countries dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            Countries <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3  max-w-[75vw] lg:w-[500px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Europe</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Germany</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">France</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Italy</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Spain</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">North America</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">USA</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Asia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">India</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Singapore</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Australia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Australia</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">New Zealand</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="reviews.html" class="hover:text-white">Reviews</a>
+                    <a href="career.html" class="hover:text-white">Career</a>
+                    <a href="contact.html" class="hover:text-white">Contact Us</a>
+                </nav>
+
+                <!-- mobile buttons -->
+                <div class="md:hidden flex items-center gap-3">
+                    <a href="contact.html"
+                        class="hidden sm:inline-flex items-center gap-2 bg-blue-600 px-3 py-2 rounded text-white text-sm">
+                        <i class="fa-solid fa-headset"></i> Contact
+                    </a>
+                    <button id="mobile-toggle" class="p-2 rounded-md hover:bg-white/10 focus:outline-none">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="md:hidden bg-slate-800/95 text-white hidden">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-2 py-2 rounded hover:bg-white/10">Home</a>
+                <a href="about.html" class="block px-2 py-2 rounded hover:bg-white/10">About Us</a>
+
+                <!-- Mobile services dropdown -->
+                <div>
+                    <button id="mobile-services-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span><a href="services.html">Services</a></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-services-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <!-- Cols replicated from desktop -->
+                        <div>
+                            <h4 class="font-semibold">Service</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Job Assistance</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Post Landing</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">PTE Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">IELTS Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Permanent Residency</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Study Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada Study Visa</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Visitor Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Schengen Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Travel & Tourism</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Investment Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Investment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile countries dropdown -->
+                <div>
+                    <button id="mobile-countries-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span>Countries</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-countries-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <div>
+                            <h4 class="font-semibold">Europe</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Germany</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">France</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Italy</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Spain</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">North America</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">USA</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Asia</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">India</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Singapore</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Australia & Others</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Australia</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">New Zealand</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="reviews.html" class="block px-2 py-2 rounded hover:bg-white/10">Reviews</a>
+                <a href="career.html" class="block px-2 py-2 rounded hover:bg-white/10">Career</a>
+                <a href="contact.html" class="block px-2 py-2 rounded hover:bg-white/10">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <!-- HERO -->
+    <main class="bg-gradient-to-r from-blue-900 to-slate-800 text-white">
+        <section class="container mx-auto px-4 md:px-8 py-14">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <span class="inline-block bg-blue-600 text-xs px-3 py-1 rounded-full uppercase tracking-wide">UK
+                        Immigration</span>
+                    <h1 class="mt-6 text-3xl md:text-4xl font-extrabold leading-tight">Your Path to the <span
+                            class="text-blue-200">United Kingdom</span></h1>
+                    <p class="mt-4 text-slate-200 max-w-prose">
+                        Expert UK immigration services for work visas, family visas, student visas, and settlement
+                        applications.
+                        Make the UK your new home with our guidance.
+                    </p>
+
+                    <div class="mt-6 flex gap-3">
+                        <a href="../contact.html"
+                            class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-md font-semibold">
+                            <i class="fa-solid fa-comment-dots"></i> Free UK Assessment
+                        </a>
+                        <input aria-label="phone or email"
+                            class="w-40 md:w-56 rounded-md px-3 py-2 bg-white/20 placeholder-slate-200 text-white"
+                            placeholder="Your email or phone" />
+                    </div>
+                </div>
+
+                <div class="flex justify-center md:justify-end">
+                    <div class="w-full max-w-md bg-white rounded-xl overflow-hidden shadow-xl">
+                        <img src="united-kingdom.jpg" alt="London aerial view" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="bg-white text-slate-800">
+            <div class="container mx-auto px-4 md:px-8 py-8 md:py-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="py-6">
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-percent text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">92%</h3>
+                        <p class="text-sm text-slate-500 mt-1">Success Rate</p>
+                    </div>
+                    <div class="py-6">
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-clock text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">3-8</h3>
+                        <p class="text-sm text-slate-500 mt-1">Weeks Processing</p>
+                    </div>
+                    <div class="py-6">
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-briefcase text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">800+</h3>
+                        <p class="text-sm text-slate-500 mt-1">Successful Cases</p>
+                    </div>
+                    <div class="py-6">
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-globe text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">15+</h3>
+                        <p class="text-sm text-slate-500 mt-1">Visa Categories</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- UK VISA ROUTES -->
+    <section class="container mx-auto px-4 md:px-8 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center">UK Visa Routes</h2>
+        <p class="text-center text-slate-500 mt-2 max-w-2xl mx-auto">Multiple pathways to live, work, and study in the
+            United Kingdom</p>
+
+        <div class="grid gap-6 mt-8 md:grid-cols-3">
+            <!-- Card: Skilled Worker -->
+            <article class="bg-white rounded-xl shadow p-6">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="font-semibold text-lg flex items-center gap-2"><i
+                                class="fa-solid fa-briefcase text-blue-600"></i> Skilled Worker Visa</h3>
+                        <p class="text-sm text-slate-500 mt-2">For skilled workers with a job offer from a UK employer.
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <span class="card-badge bg-blue-50 text-blue-700">Processing 3–8 weeks</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 grid grid-cols-3 gap-3 text-xs">
+                    <div class="p-2 rounded bg-green-50 text-green-700 text-center">£0 - £1,423</div>
+                    <div class="p-2 rounded bg-indigo-50 text-indigo-700 text-center">Duration up to 5 years</div>
+                    <div class="p-2 rounded bg-amber-50 text-amber-800 text-center">Requirements: Job offer</div>
+                </div>
+
+                <ul class="mt-4 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Sponsored job from licensed sponsor</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Minimum salary threshold</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>English language level</li>
+                </ul>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Learn
+                        More</a>
+                </div>
+            </article>
+
+            <!-- Card: Student Visa -->
+            <article class="bg-white rounded-xl shadow p-6">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="font-semibold text-lg flex items-center gap-2"><i
+                                class="fa-solid fa-graduation-cap text-blue-600"></i> Student Visa</h3>
+                        <p class="text-sm text-slate-500 mt-2">Study at UK universities and educational institutions.
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <span class="card-badge bg-blue-50 text-blue-700">Processing 3 weeks</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 grid grid-cols-3 gap-3 text-xs">
+                    <div class="p-2 rounded bg-green-50 text-green-700 text-center">Fee £363</div>
+                    <div class="p-2 rounded bg-indigo-50 text-indigo-700 text-center">Duration: Course length</div>
+                    <div class="p-2 rounded bg-amber-50 text-amber-800 text-center">Work rights: Part-time</div>
+                </div>
+
+                <ul class="mt-4 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>CAS from licensed sponsor</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Proof of funds</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>English language requirement</li>
+                </ul>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Learn
+                        More</a>
+                </div>
+            </article>
+
+            <!-- Card: Family/Spouse Visa -->
+            <article class="bg-white rounded-xl shadow p-6">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="font-semibold text-lg flex items-center gap-2"><i
+                                class="fa-solid fa-heart text-blue-600"></i> Family/Spouse Visa</h3>
+                        <p class="text-sm text-slate-500 mt-2">Join your British or settled partner in the UK.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="card-badge bg-blue-50 text-blue-700">Processing 10–12 weeks</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 grid grid-cols-3 gap-3 text-xs">
+                    <div class="p-2 rounded bg-green-50 text-green-700 text-center">Fee £1,538</div>
+                    <div class="p-2 rounded bg-indigo-50 text-indigo-700 text-center">Duration: 30 months</div>
+                    <div class="p-2 rounded bg-amber-50 text-amber-800 text-center">Requirements: Relationship evidence
+                    </div>
+                </div>
+
+                <ul class="mt-4 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Genuine relationship evidence</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Financial requirement (£18,600)</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>English requirement (A1/A2)</li>
+                </ul>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Learn
+                        More</a>
+                </div>
+            </article>
+
+            <!-- Next row (3 more) -->
+            <article class="bg-white rounded-xl shadow p-6">
+                <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fa-solid fa-star text-blue-600"></i>
+                    Global Talent Visa</h3>
+                <p class="mt-2 text-sm text-slate-500">For exceptional talent in sciences, humanities, engineering,
+                    arts.</p>
+
+                <div class="mt-4 grid grid-cols-3 gap-3 text-xs">
+                    <div class="p-2 rounded bg-green-50 text-green-700 text-center">Processing 3 weeks</div>
+                    <div class="p-2 rounded bg-indigo-50 text-indigo-700 text-center">Fee £623</div>
+                    <div class="p-2 rounded bg-amber-50 text-amber-800 text-center">Duration up to 5 years</div>
+                </div>
+
+                <ul class="mt-4 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Endorsement by designated body</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>No job offer required</li>
+                </ul>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Learn
+                        More</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow p-6">
+                <h3 class="font-semibold text-lg flex items-center gap-2"><i
+                        class="fa-solid fa-lightbulb text-blue-600"></i> Innovator Founder Visa</h3>
+                <p class="mt-2 text-sm text-slate-500">For experienced businesspeople setting up innovative ventures.
+                </p>
+
+                <div class="mt-4 grid grid-cols-3 gap-3 text-xs">
+                    <div class="p-2 rounded bg-green-50 text-green-700 text-center">Processing 3–4 weeks</div>
+                    <div class="p-2 rounded bg-indigo-50 text-indigo-700 text-center">Fee £1,021</div>
+                    <div class="p-2 rounded bg-amber-50 text-amber-800 text-center">Duration: 3 years</div>
+                </div>
+
+                <ul class="mt-4 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Endorsement from approved body</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Business plan & funds</li>
+                </ul>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Learn
+                        More</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow p-6">
+                <h3 class="font-semibold text-lg flex items-center gap-2"><i
+                        class="fa-solid fa-user-check text-blue-600"></i> Youth Mobility Scheme</h3>
+                <p class="mt-2 text-sm text-slate-500">For young people from certain countries to live & work in UK.</p>
+
+                <div class="mt-4 grid grid-cols-3 gap-3 text-xs">
+                    <div class="p-2 rounded bg-green-50 text-green-700 text-center">Processing 3 weeks</div>
+                    <div class="p-2 rounded bg-indigo-50 text-indigo-700 text-center">Fee £259</div>
+                    <div class="p-2 rounded bg-amber-50 text-amber-800 text-center">Duration 2 years</div>
+                </div>
+
+                <ul class="mt-4 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Age 18–30</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Country specific eligibility</li>
+                </ul>
+
+                <div class="mt-4">
+                    <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Learn
+                        More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- PATH TO SETTLEMENT -->
+    <section class="container mx-auto px-4 md:px-8 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center">Path to Settlement</h2>
+        <p class="text-center text-slate-500 mt-2">Long-term residence and citizenship options in the UK</p>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-xl shadow p-6">
+                <h3 class="font-semibold">Indefinite Leave to Remain (ILR)</h3>
+                <p class="text-sm text-slate-500 mt-2">Permanent settlement after 5 years continuous residence
+                    (depending on route).</p>
+                <ul class="mt-3 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Requirements depend on visa route</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Life in the UK test</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Good character requirement</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-xl shadow p-6">
+                <h3 class="font-semibold">British Citizenship</h3>
+                <p class="text-sm text-slate-500 mt-2">Full citizenship after 1 year with ILR or 5 years residency
+                    (route dependent).</p>
+                <ul class="mt-3 text-sm space-y-1 text-slate-600">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Residence & immigration history checks</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Good character requirement</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>English & Life in the UK test</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLICATION PROCESS -->
+    <section class="bg-slate-50 py-10">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center">Application Process</h2>
+            <p class="text-center text-slate-500 mt-2">Your step-by-step journey to UK visa approval</p>
+
+            <ol class="mt-8 max-w-3xl mx-auto space-y-6">
+                <li class="flex items-start gap-4">
+                    <div class="flex-none">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+                            1</div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Eligibility Check</h4>
+                        <p class="text-sm text-slate-600">Assess your qualification for UK visa routes.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="flex-none">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+                            2</div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Document Preparation</h4>
+                        <p class="text-sm text-slate-600">Gather and prepare all required documents.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="flex-none">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+                            3</div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Online Application</h4>
+                        <p class="text-sm text-slate-600">Submit application and pay fees online.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="flex-none">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+                            4</div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Biometrics & Interview</h4>
+                        <p class="text-sm text-slate-600">Attend appointment for biometrics and documents.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="flex-none">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+                            5</div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Decision & Travel</h4>
+                        <p class="text-sm text-slate-600">Receive decision and plan your move to the UK.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="container mx-auto px-4 md:px-8 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center">Benefits of UK Residence</h2>
+        <p class="text-center text-slate-500 mt-2">Enjoy these advantages as a UK resident</p>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-xl shadow p-5 flex items-start gap-3">
+                <div
+                    class="flex-none w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold">Access to NHS healthcare</h4>
+                    <p class="text-sm text-slate-500">Comprehensive healthcare system for residents.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow p-5 flex items-start gap-3">
+                <div
+                    class="flex-none w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold">World-class education system</h4>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow p-5 flex items-start gap-3">
+                <div
+                    class="flex-none w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold">No restriction on employment</h4>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow p-5 flex items-start gap-3">
+                <div
+                    class="flex-none w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold">Social benefits and protections</h4>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow p-5 flex items-start gap-3">
+                <div
+                    class="flex-none w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold">Travel freely within UK & beyond</h4>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow p-5 flex items-start gap-3">
+                <div
+                    class="flex-none w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold">Path to British citizenship</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA (DARK) -->
+    <section class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h3 class="text-2xl font-bold">Ready to Make the UK Your Home?</h3>
+            <p class="mt-2 text-slate-300 max-w-2xl mx-auto">Get expert guidance for your UK immigration journey. Our
+                specialists will help you choose the right visa route and navigate the application process.</p>
+
+            <div class="mt-6 flex items-center justify-center gap-3">
+                <a href="../contact.html"
+                    class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-md font-semibold">
+                    <i class="fa-solid fa-comments"></i> Free Consultation
+                </a>
+                <input aria-label="contact input" class="rounded-md px-3 py-2 w-40 md:w-64 text-slate-900"
+                    placeholder="Your email or phone" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (full details) -->
+    <footer class="bg-[#081428] text-slate-300">
+        <div class="container mx-auto px-4 md:px-8 py-12 grid md:grid-cols-4 gap-8">
+            <!-- Col 1: Brand -->
+            <div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-bold">Newinsight Solutions LLP</div>
+                        <div class="text-sm text-slate-400">Your Global Immigration Partner</div>
+                    </div>
+                </div>
+
+                <p class="text-sm text-slate-400 mt-4">Expert immigration and visa services for individuals and
+                    businesses
+                    seeking global opportunities. We provide comprehensive solutions for all your immigration needs.</p>
+
+                <div class="flex items-center gap-3 mt-4">
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-facebook text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i class="fa-brands fa-twitter text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-instagram text-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white">Services</a></li>
+                    <li><a href="reviews.html" class="hover:text-white">Reviews</a></li>
+                    <li><a href="career.html" class="hover:text-white">Career</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Immigration Services -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Countries</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="australia.html" class="block px-3  rounded ">Australia Immigration</a>
+                    </li>
+                    <li><a href="" class="block px-3 rounded ">Canada Immigration</a></li>
+                    <li><a href="uk.html" class="block px-3 rounded ">UK Immigration</a></li>
+                    <li><a href="schengen.html" class="block px-3  rounded ">Schengen Visa</a></li>
+                    <li><a href="europe.html" class="block px-3  rounded ">European Countries</a></li>
+                    <li><a href="europe.html" class="block px-3  rounded ">Gulf Countries</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Contact Information</h4>
+                <p class="text-sm text-slate-400">123 Business Street<br />New York, NY 10001</p>
+                <p class="mt-2 text-sm"><i class="fa-solid fa-phone mr-2"></i>+1 (555) 123-4567</p>
+                <p class="text-sm mt-1"><i class="fa-solid fa-envelope mr-2"></i> info@newinsightsolutions.com</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-700">
+            <div
+                class="container mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+                <div class="text-sm text-slate-400">© 2024 Newinsight Solutions LLP. All rights reserved.</div>
+                <div class="flex items-center gap-4 text-sm">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                    <a href="disclaimer.html" class="hover:text-white">Disclaimer</a>
+                    <a href="Refund.html" class="hover:text-white">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal JS: mobile toggles -->
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileToggle && mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile services dropdown toggle
+        const servicesToggle = document.getElementById('mobile-services-toggle');
+        const servicesList = document.getElementById('mobile-services-list');
+        servicesToggle && servicesToggle.addEventListener('click', () => {
+            servicesList.classList.toggle('hidden');
+        });
+
+        // Mobile countries dropdown toggle
+        const countriesToggle = document.getElementById('mobile-countries-toggle');
+        const countriesList = document.getElementById('mobile-countries-list');
+        countriesToggle && countriesToggle.addEventListener('click', () => {
+            countriesList.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

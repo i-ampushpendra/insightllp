@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Client Reviews — Newinsight Solutions LLP</title>
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* small custom polish */
+        .card-badge {
+            font-size: .78rem;
+            padding: .25rem .5rem;
+            border-radius: .5rem;
+        }
+
+        .fade-in {
+            transition: opacity .18s ease, transform .18s ease;
+            transform-origin: top;
+        }
+
+        /* subtle card hover */
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(2, 6, 23, 0.08);
+        }
+
+        /* Verified badge */
+        .verified {
+            background: rgba(56, 189, 248, 0.08);
+            color: #0369a1;
+            padding: 0.2rem 0.5rem;
+            border-radius: 9999px;
+            font-size: .75rem;
+            display: inline-flex;
+            gap: .4rem;
+            align-items: center;
+        }
+    </style>
+    <style>
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            /* distance from bottom */
+            right: 20px;
+            /* distance from right */
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body class="italic antialiased text-slate-800 bg-white">
+    <a href="https://wa.me/917065454714" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- TOPBAR -->
+    <!-- TOP BAR -->
+    <div class="bg-gray-900 text-gray-200 text-sm py-2 px-4 md:px-8 ">
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-2 ml-auto"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</span>
+            <span class="hidden sm:inline-flex items-center gap-2"><i class="fa-solid fa-envelope"></i>
+                info@newinsightsolutions.com</span>
+        </div>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- brand -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="font-bold">Newinsight Solutions LLP</div>
+                        <div class="text-xs text-slate-300">Your Global Immigration Partner</div>
+                    </div>
+                </a>
+
+                <!-- desktop nav -->
+                <nav class="hidden md:flex items-center gap-4 font-medium">
+                    <a href="index.html" class="text-blue-100 hover:text-white">Home</a>
+                    <a href="about.html" class="hover:text-white">About Us</a>
+
+                    <!-- Services dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            <a href="services.html">
+                                Services</a> <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-full max-w-[95vw] lg:w-[700px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Service</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Job Assistance</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Post Landing</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">PTE Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">IELTS Preparation</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Permanent Residency</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Study Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Study Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Study Visa</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Visitor Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Schengen Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE Visitor Visa</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Travel & Tourism</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Investment Visa</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Canada Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK Investment</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">USA Investment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Countries dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white focus:outline-none">
+                            Countries <i class="fa-solid fa-caret-down text-sm"></i>
+                        </button>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 mt-3  max-w-[75vw] lg:w-[500px] bg-white text-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:visible group-hover:opacity-100 fade-in -translate-y-1 group-hover:translate-y-0 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                            <!-- Col 1 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Europe</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Germany</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">France</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Italy</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Spain</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 2 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">North America</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">USA</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Canada</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 3 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Asia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">India</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Singapore</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UAE</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Col 4 -->
+                            <div>
+                                <h4 class="font-semibold text-slate-900 mb-2">Australia</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Australia</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">New Zealand</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">UK</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="reviews.html" class="hover:text-white">Reviews</a>
+                    <a href="career.html" class="hover:text-white">Career</a>
+                    <a href="contact.html" class="hover:text-white">Contact Us</a>
+                </nav>
+
+                <!-- mobile buttons -->
+                <div class="md:hidden flex items-center gap-3">
+                    <a href="contact.html"
+                        class="hidden sm:inline-flex items-center gap-2 bg-blue-600 px-3 py-2 rounded text-white text-sm">
+                        <i class="fa-solid fa-headset"></i> Contact
+                    </a>
+                    <button id="mobile-toggle" class="p-2 rounded-md hover:bg-white/10 focus:outline-none">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="md:hidden bg-slate-800/95 text-white hidden">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-2 py-2 rounded hover:bg-white/10">Home</a>
+                <a href="about.html" class="block px-2 py-2 rounded hover:bg-white/10">About Us</a>
+
+                <!-- Mobile services dropdown -->
+                <div>
+                    <button id="mobile-services-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span><a href="services.html">Services</a></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-services-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <!-- Cols replicated from desktop -->
+                        <div>
+                            <h4 class="font-semibold">Service</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Job Assistance</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Post Landing</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">PTE Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">IELTS Preparation</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Permanent Residency</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Study Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Study Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada Study Visa</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Visitor Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Schengen Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE Visitor Visa</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Travel & Tourism</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Investment Visa</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Canada Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK Investment</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">USA Investment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile countries dropdown -->
+                <div>
+                    <button id="mobile-countries-toggle"
+                        class="w-full text-left px-2 py-2 rounded hover:bg-white/10 flex items-center justify-between">
+                        <span>Countries</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-countries-list" class="mt-1 hidden space-y-4 pl-3 text-sm">
+                        <div>
+                            <h4 class="font-semibold">Europe</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Germany</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">France</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Italy</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Spain</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">North America</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">USA</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Canada</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Asia</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">India</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">Singapore</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UAE</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Australia & Others</h4>
+                            <ul class="pl-2 space-y-1">
+                                <li><a href="#" class="block hover:text-blue-400">Australia</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">New Zealand</a></li>
+                                <li><a href="#" class="block hover:text-blue-400">UK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="reviews.html" class="block px-2 py-2 rounded hover:bg-white/10">Reviews</a>
+                <a href="career.html" class="block px-2 py-2 rounded hover:bg-white/10">Career</a>
+                <a href="contact.html" class="block px-2 py-2 rounded hover:bg-white/10">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="bg-gradient-to-r from-blue-900 to-slate-800 text-white">
+            <div class="container mx-auto px-4 md:px-8 py-14 text-center">
+                <span class="inline-block bg-blue-600 text-xs px-3 py-1 rounded-full uppercase tracking-wide">Client
+                    Reviews</span>
+                <h1 class="mt-6 text-3xl md:text-4xl font-extrabold">What Our Clients Say</h1>
+                <p class="mt-3 text-slate-200 max-w-2xl mx-auto">Read genuine reviews from clients who have successfully
+                    achieved their immigration goals with our expert guidance and support.</p>
+            </div>
+        </section>
+
+        <!-- KPIs -->
+        <section class="bg-white">
+            <div class="container mx-auto px-4 md:px-8 py-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-users text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">2,500+</h3>
+                        <p class="text-sm text-slate-500 mt-1">Happy Clients</p>
+                    </div>
+
+                    <div>
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-star text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">4.9/5</h3>
+                        <p class="text-sm text-slate-500 mt-1">Average Rating</p>
+                    </div>
+
+                    <div>
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-check-circle text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">98%</h3>
+                        <p class="text-sm text-slate-500 mt-1">Success Rate</p>
+                    </div>
+
+                    <div>
+                        <div
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-600 mx-auto">
+                            <i class="fa-solid fa-comments text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-3">1,200+</h3>
+                        <p class="text-sm text-slate-500 mt-1">Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENT SUCCESS STORIES GRID -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-center">Client Success Stories</h2>
+                <p class="text-center text-slate-500 mt-2 max-w-2xl mx-auto">Real experiences from real people who
+                    trusted us with their immigration journey.</p>
+
+                <div class="mt-8 grid gap-6 md:grid-cols-3">
+                    <!-- Card 1 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                SJ</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Sarah</div>
+                                        <div class="text-xs text-slate-400">Australia · March 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400"><span>★★★★★</span></div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Excellent service and professional support. The team at Newinsight Solutions made my
+                                    Australian immigration process incredibly smooth. I received PR approval in just 10
+                                    months.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MC</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Yash</div>
+                                        <div class="text-xs text-slate-400">Canada · February 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Outstanding Express Entry assistance. My CRS improved quickly with their guidance —
+                                    I had my PR in under 4 months. Knowledgeable and patient team.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                EW</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ravindra</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · January 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Professional and reliable UK visa service. Handled all paperwork precisely and kept
+                                    me informed throughout. Highly recommended.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                DK</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ram Kumar</div>
+                                        <div class="text-xs text-slate-400">Germany · December 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Excellent study visa guidance — helped with scholarships and university
+                                    applications. Very supportive through the whole process.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MR</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ankit kumar</div>
+                                        <div class="text-xs text-slate-400">Spain · November 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Schengen Visa</div>
+                                    Quick and efficient Schengen visa processing for my business travel. Clear
+                                    communication and rapid turnaround.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JP</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ram Thakur</div>
+                                        <div class="text-xs text-slate-400">Australia · October 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Family visa success story — team was patient, explained every step and helped
+                                    prepare strong documentation.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                LA</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Arpit Bhakal</div>
+                                        <div class="text-xs text-slate-400">Canada · September 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Very detailed support for the PNP process — advisors clarified all requirements and
+                                    handled the paperwork.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                RT</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Shalini Te</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · August 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Business visa expertise — they handled the legal documentation and set realistic
+                                    expectations. Smooth experience.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JL</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ruby Chauhan</div>
+                                        <div class="text-xs text-slate-400">Australia · July 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Student visa & university admission support. They helped with documents and
+                                    interview prep — successful outcome.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="mt-8 grid gap-6 md:grid-cols-3">
+                    <!-- Card 1 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                SJ</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Aniket Thakur</div>
+                                        <div class="text-xs text-slate-400">Australia · March 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400"><span>★★★★★</span></div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Excellent service and professional support. The team at Newinsight Solutions made my
+                                    Australian immigration process incredibly smooth. I received PR approval in just 10
+                                    months.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MC</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Supriya Shukla</div>
+                                        <div class="text-xs text-slate-400">Canada · February 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Outstanding Express Entry assistance. My CRS improved quickly with their guidance —
+                                    I had my PR in under 4 months. Knowledgeable and patient team.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                EW</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Rajendra Vohra</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · January 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Professional and reliable UK visa service. Handled all paperwork precisely and kept
+                                    me informed throughout. Highly recommended.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                DK</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Rajesh Kumar</div>
+                                        <div class="text-xs text-slate-400">Germany · December 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Excellent study visa guidance — helped with scholarships and university
+                                    applications. Very supportive through the whole process.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MR</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ankit kumar</div>
+                                        <div class="text-xs text-slate-400">Spain · November 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Schengen Visa</div>
+                                    Quick and efficient Schengen visa processing for my business travel. Clear
+                                    communication and rapid turnaround.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JP</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ram Thakur</div>
+                                        <div class="text-xs text-slate-400">Australia · October 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Family visa success story — team was patient, explained every step and helped
+                                    prepare strong documentation.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                LA</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Arpit Bhakal</div>
+                                        <div class="text-xs text-slate-400">Canada · September 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Very detailed support for the PNP process — advisors clarified all requirements and
+                                    handled the paperwork.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                RT</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Shalini Te</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · August 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Business visa expertise — they handled the legal documentation and set realistic
+                                    expectations. Smooth experience.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JL</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ruby Chauhan</div>
+                                        <div class="text-xs text-slate-400">Australia · July 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Student visa & university admission support. They helped with documents and
+                                    interview prep — successful outcome.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="mt-8 grid gap-6 md:grid-cols-3">
+                    <!-- Card 1 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                SJ</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Arpan Das</div>
+                                        <div class="text-xs text-slate-400">Australia · March 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400"><span>★★★★★</span></div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Excellent service and professional support. The team at Newinsight Solutions made my
+                                    Australian immigration process incredibly smooth. I received PR approval in just 10
+                                    months.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MC</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Anupam Choudhary</div>
+                                        <div class="text-xs text-slate-400">Canada · February 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Outstanding Express Entry assistance. My CRS improved quickly with their guidance —
+                                    I had my PR in under 4 months. Knowledgeable and patient team.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                EW</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ravi Chaubey</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · January 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Professional and reliable UK visa service. Handled all paperwork precisely and kept
+                                    me informed throughout. Highly recommended.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                DK</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Raghu Kumar</div>
+                                        <div class="text-xs text-slate-400">Germany · December 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Excellent study visa guidance — helped with scholarships and university
+                                    applications. Very supportive through the whole process.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MR</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ankit kumar</div>
+                                        <div class="text-xs text-slate-400">Spain · November 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Schengen Visa</div>
+                                    Quick and efficient Schengen visa processing for my business travel. Clear
+                                    communication and rapid turnaround.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JP</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ram Thakur</div>
+                                        <div class="text-xs text-slate-400">Australia · October 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Family visa success story — team was patient, explained every step and helped
+                                    prepare strong documentation.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                LA</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Arpit Bhakal</div>
+                                        <div class="text-xs text-slate-400">Canada · September 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Very detailed support for the PNP process — advisors clarified all requirements and
+                                    handled the paperwork.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                RT</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Shalini Te</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · August 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Business visa expertise — they handled the legal documentation and set realistic
+                                    expectations. Smooth experience.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JL</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ruby Chauhan</div>
+                                        <div class="text-xs text-slate-400">Australia · July 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Student visa & university admission support. They helped with documents and
+                                    interview prep — successful outcome.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="mt-8 grid gap-6 md:grid-cols-3">
+                    <!-- Card 1 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                SJ</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Shivam</div>
+                                        <div class="text-xs text-slate-400">Australia · March 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400"><span>★★★★★</span></div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Excellent service and professional support. The team at Newinsight Solutions made my
+                                    Australian immigration process incredibly smooth. I received PR approval in just 10
+                                    months.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MC</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Swati</div>
+                                        <div class="text-xs text-slate-400">Canada · February 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Outstanding Express Entry assistance. My CRS improved quickly with their guidance —
+                                    I had my PR in under 4 months. Knowledgeable and patient team.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                EW</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Raj Vohra</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · January 2024</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Professional and reliable UK visa service. Handled all paperwork precisely and kept
+                                    me informed throughout. Highly recommended.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                DK</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Raju Kumar</div>
+                                        <div class="text-xs text-slate-400">Germany · December 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Excellent study visa guidance — helped with scholarships and university
+                                    applications. Very supportive through the whole process.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                MR</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ankit kumar</div>
+                                        <div class="text-xs text-slate-400">Spain · November 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Schengen Visa</div>
+                                    Quick and efficient Schengen visa processing for my business travel. Clear
+                                    communication and rapid turnaround.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JP</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ram Thakur</div>
+                                        <div class="text-xs text-slate-400">Australia · October 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Australia Immigration</div>
+                                    Family visa success story — team was patient, explained every step and helped
+                                    prepare strong documentation.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                LA</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Arpit Bhakal</div>
+                                        <div class="text-xs text-slate-400">Canada · September 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Canada Immigration</div>
+                                    Very detailed support for the PNP process — advisors clarified all requirements and
+                                    handled the paperwork.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                RT</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Shalini Te</div>
+                                        <div class="text-xs text-slate-400">United Kingdom · August 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">UK Immigration</div>
+                                    Business visa expertise — they handled the legal documentation and set realistic
+                                    expectations. Smooth experience.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="bg-white p-6 rounded-xl shadow card-hover">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-semibold">
+                                JL</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Ruby Chauhan</div>
+                                        <div class="text-xs text-slate-400">Australia · July 2023</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="flex items-center gap-1 text-yellow-400">★★★★★</div>
+                                        <div class="mt-1 verified"><i class="fa-solid fa-check"></i> Verified</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 text-sm text-slate-700">
+                                    <div class="text-xs text-blue-600 font-semibold mb-2">Study Visa</div>
+                                    Student visa & university admission support. They helped with documents and
+                                    interview prep — successful outcome.
+                                </div>
+
+                                <div class="mt-4 text-xs text-slate-400">Found this review helpful <a href="#"
+                                        class="text-blue-600 hover:underline">Yes</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SHARE YOUR EXPERIENCE (FORM) -->
+        <section class="py-12">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-center">Share Your Experience</h2>
+                <p class="text-center text-slate-500 mt-2 max-w-2xl mx-auto">Help others by sharing your experience with
+                    our services</p>
+
+                <div class="mt-8 max-w-3xl mx-auto bg-white rounded-xl shadow p-6">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold">Write a Review</h3>
+                        <div class="text-sm text-slate-400">All reviews are verified before publishing</div>
+                    </div>
+
+                    <form id="review-form" class="mt-4 space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input required name="fullname" class="w-full rounded-md border border-slate-200 px-3 py-2"
+                                placeholder="Full Name *" />
+                            <input required name="email" type="email"
+                                class="w-full rounded-md border border-slate-200 px-3 py-2"
+                                placeholder="Email Address *" />
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <select required name="service" class="w-full rounded-md border border-slate-200 px-3 py-2">
+                                <option value="">Service Used *</option>
+                                <option>Australia Immigration</option>
+                                <option>Canada Immigration</option>
+                                <option>UK Immigration</option>
+                                <option>Study Visa</option>
+                                <option>Schengen Visa</option>
+                            </select>
+                            <select required name="rating" class="w-full rounded-md border border-slate-200 px-3 py-2">
+                                <option value="">Rating *</option>
+                                <option>5 - Excellent</option>
+                                <option>4 - Very Good</option>
+                                <option>3 - Good</option>
+                                <option>2 - Fair</option>
+                                <option>1 - Poor</option>
+                            </select>
+                        </div>
+
+                        <input name="title" class="w-full rounded-md border border-slate-200 px-3 py-2"
+                            placeholder="Review Title" />
+                        <textarea name="review" rows="5" class="w-full rounded-md border border-slate-200 px-3 py-2"
+                            placeholder="Your Review *"></textarea>
+
+                        <div class="text-xs text-slate-500 bg-slate-50 p-3 rounded">
+                            Note: Reviews are moderated and will be published after verification. We may contact you to
+                            verify your experience before publishing your review.
+                        </div>
+
+                        <div class="text-right">
+                            <button type="submit"
+                                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                                <i class="fa-solid fa-paper-plane"></i> Submit Review
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUSTED BY THOUSANDS -->
+        <section class="bg-slate-900 text-white py-12">
+            <div class="container mx-auto px-4 md:px-8 text-center">
+                <h3 class="text-2xl font-bold">Trusted by Thousands</h3>
+                <p class="text-slate-300 mt-2 max-w-2xl mx-auto">Join the thousands of satisfied clients who have
+                    achieved their immigration dreams with our help</p>
+
+                <div class="mt-8 grid md:grid-cols-3 gap-6">
+                    <div class="p-6">
+                        <i class="fa-solid fa-check-circle text-3xl text-blue-400"></i>
+                        <h4 class="mt-3 font-semibold">Verified Reviews</h4>
+                        <p class="text-slate-300 mt-2">All reviews are verified and come from real clients</p>
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-globe text-3xl text-blue-400"></i>
+                        <h4 class="mt-3 font-semibold">Global Success</h4>
+                        <p class="text-slate-300 mt-2">Successful cases across 25+ countries worldwide</p>
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-award text-3xl text-blue-400"></i>
+                        <h4 class="mt-3 font-semibold">Award Winning</h4>
+                        <p class="text-slate-300 mt-2">Recognized for excellence in immigration services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#081428] text-slate-300">
+        <div class="container mx-auto px-4 md:px-8 py-12 grid md:grid-cols-4 gap-8">
+            <!-- Col 1: Brand -->
+            <div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-bold">Newinsight Solutions LLP</div>
+                        <div class="text-sm text-slate-400">Your Global Immigration Partner</div>
+                    </div>
+                </div>
+
+                <p class="text-sm text-slate-400 mt-4">Expert immigration and visa services for individuals and
+                    businesses
+                    seeking global opportunities. We provide comprehensive solutions for all your immigration needs.</p>
+
+                <div class="flex items-center gap-3 mt-4">
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-facebook text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i class="fa-brands fa-twitter text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-white"><i
+                            class="fa-brands fa-instagram text-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white">Services</a></li>
+                    <li><a href="reviews.html" class="hover:text-white">Reviews</a></li>
+                    <li><a href="career.html" class="hover:text-white">Career</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Immigration Services -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Countries</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="australia.html" class="block px-3  rounded ">Australia Immigration</a>
+                    </li>
+                    <li><a href="" class="block px-3 rounded ">Canada Immigration</a></li>
+                    <li><a href="uk.html" class="block px-3 rounded ">UK Immigration</a></li>
+                    <li><a href="schengen.html" class="block px-3  rounded ">Schengen Visa</a></li>
+                    <li><a href="europe.html" class="block px-3  rounded ">European Countries</a></li>
+                    <li><a href="study-visa.html" class="block px-3  rounded ">Gulf Countries</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">Contact Information</h4>
+                <p class="text-sm text-slate-400">123 Business Street<br />New York, NY 10001</p>
+                <p class="mt-2 text-sm"><i class="fa-solid fa-phone mr-2"></i>+1 (555) 123-4567</p>
+                <p class="text-sm mt-1"><i class="fa-solid fa-envelope mr-2"></i> info@newinsightsolutions.com</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-700">
+            <div
+                class="container mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+                <div class="text-sm text-slate-400">© 2024 Newinsight Solutions LLP. All rights reserved.</div>
+                <div class="flex items-center gap-4 text-sm">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                    <a href="disclaimer.html" class="hover:text-white">Disclaimer</a>
+                    <a href="Refund.html" class="hover:text-white">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INLINE JS -->
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileToggle && mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile services dropdown toggle
+        const servicesToggle = document.getElementById('mobile-services-toggle');
+        const servicesList = document.getElementById('mobile-services-list');
+        servicesToggle && servicesToggle.addEventListener('click', () => {
+            servicesList.classList.toggle('hidden');
+        });
+
+        // Mobile countries dropdown toggle
+        const countriesToggle = document.getElementById('mobile-countries-toggle');
+        const countriesList = document.getElementById('mobile-countries-list');
+        countriesToggle && countriesToggle.addEventListener('click', () => {
+            countriesList.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
